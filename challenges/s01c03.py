@@ -28,6 +28,8 @@ def decipher(ciphertext: bytes) -> List[List[Any]]:
 
     return results[:5]
 
-results = decipher(EXAMPLE)
-for i in results:
-    print(f"key used: {i[0]}, decoded text: {i[1]}, score: {i[2]}")
+
+if __name__ == "__main__":
+    results = decipher(EXAMPLE)
+    for i in results:
+        print(f"key used: {i[0]}, decoded text: {i[1]}, score: {i[2]}")
