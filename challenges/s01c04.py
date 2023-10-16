@@ -33,3 +33,5 @@ def decipher_text():
     results.sort(key=lambda x: x[3], reverse=True)
     return results[:5]
 
+
+decipher_text()
